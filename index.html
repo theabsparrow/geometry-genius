@@ -44,6 +44,7 @@
             <div
                 class="border-[1px] border-black h-[100px] w-full px-[100px] bg-black pt-4 rounded-xl sticky top-0 z-10 lg:hidden mb-5">
                 <h1 class="text-2xl font-bold font-inter text-white">Area Calculator</h1>
+                <h1 class="text-white text-2xl"> area : <span id="area-value-mobile"> 0 </span> cm <sup>2</sup> </h1>
             </div>
 
 
@@ -60,20 +61,20 @@
                         </div>
                         <div class="flex gap-8 justify-center">
                             <div>
-                                <input
+                                <input id="triangle-base"
                                     class="text-2xl font-inter font-medium px-4 w-[80px] border-[2px] border-black rounded-lg"
                                     type="text" placeholder="b">
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                             <div>
-                                <input
+                                <input id="triangle-height"
                                     class="text-2xl font-inter font-medium px-4 w-[80px] border-[2px] border-black rounded-lg"
                                     type="text" placeholder="h">
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full text-xl">Calculate</button>
+                            <button id="triangle-calculate-button" class="btn btn-primary w-full text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -88,20 +89,20 @@
                         </div>
                         <div class="flex gap-8 justify-center">
                             <div>
-                                <input
+                                <input id="rectangle-width"
                                     class="text-2xl font-inter font-medium px-4 w-[80px] border-[2px] border-black rounded-lg"
                                     type="text" placeholder="w">
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                             <div>
-                                <input
+                                <input id="rectangle-length"
                                     class="text-2xl font-inter font-medium px-4 w-[80px] border-[2px] border-black rounded-lg"
                                     type="text" placeholder="l">
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full text-xl">Calculate</button>
+                            <button id="rectangle-calculate-button" class="btn btn-primary w-full text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -116,20 +117,20 @@
                         </div>
                         <div class="flex gap-8 justify-center">
                             <div>
-                                <input
+                                <input id="parallelogram-base"
                                     class="text-2xl font-inter font-medium px-4 w-[80px] border-[2px] border-black rounded-lg"
                                     type="text" placeholder="b">
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                             <div>
-                                <input
+                                <input id="parallelogram-height"
                                     class="text-2xl font-inter font-medium px-4 w-[80px] border-[2px] border-black rounded-lg"
                                     type="text" placeholder="h">
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full text-xl">Calculate</button>
+                            <button id="parallelogram-calculate-button" class="btn btn-primary w-full text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -142,26 +143,26 @@
                             <h2 class="text-[25px] font-bold font-inter">Rhombus</h2>
                             <p>Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub> </p>
                         </div>
-                        <div class="flex gap-8 justify-center">
+                        <div class="flex gap-2 justify-center">
                             <div>
                                 <label for="d">d <sub>1</sub> =
-                                    <input
-                                        class="text-2xl font-inter font-medium px-4 w-[50px] border-[2px] border-black rounded-lg"
+                                    <input id="rhombus-diameter-one"
+                                        class="text-lg font-inter font-medium px-1 w-[50px] border-[2px] border-black rounded-lg"
                                         type="text">
                                 </label>
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                             <div>
                                 <label for="d">d <sub>2</sub> =
-                                    <input
-                                        class="text-2xl font-inter font-medium px-4 w-[50px] border-[2px] border-black rounded-lg"
+                                    <input id="rhombus-diameter-two"
+                                        class="text-lg font-inter font-medium px-1 w-[50px] border-[2px] border-black rounded-lg"
                                         type="text">
                                 </label>
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full text-xl">Calculate</button>
+                            <button id="rhombus-calculate-button" class="btn btn-primary w-full text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -172,24 +173,24 @@
                     <div class="card-body">
                         <div class="text-center mt-2">
                             <h2 class="text-[25px] font-bold font-inter">Pentagon</h2>
-                            <p>Area (A) = 0.5 X p X b</p>
+                            <p>Area (A) = 0.5 X p X a</p>
                         </div>
                         <div class="flex gap-8 justify-center">
                             <div>
-                                <input
+                                <input id="pentagon-perimeter"
                                     class="text-2xl font-inter font-medium px-4 w-[80px] border-[2px] border-black rounded-lg"
                                     type="text" placeholder="p">
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                             <div>
-                                <input
+                                <input id="pentagon-apotheme"
                                     class="text-2xl font-inter font-medium px-4 w-[80px] border-[2px] border-black rounded-lg"
-                                    type="text" placeholder="b">
+                                    type="text" placeholder="a">
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full text-xl">Calculate</button>
+                            <button id="pentagon-calculate-button" class="btn btn-primary w-full text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -204,20 +205,20 @@
                         </div>
                         <div class="flex gap-8 justify-center">
                             <div>
-                                <input
+                                <input id="ellipse-major-diameter"
                                     class="text-2xl font-inter font-medium px-4 w-[80px] border-[2px] border-black rounded-lg"
                                     type="text" placeholder="a">
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                             <div>
-                                <input
+                                <input id="ellipse-minor-diameter"
                                     class="text-2xl font-inter font-medium px-4 w-[80px] border-[2px] border-black rounded-lg"
                                     type="text" placeholder="b">
                                 <span class="text-2xl font-inter font font-medium"> cm </span>
                             </div>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full text-xl">Calculate</button>
+                            <button id="ellipse-calculate-button" class="btn btn-primary w-full text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -225,11 +226,19 @@
             <!-- shape card section ends -->
 
             <!-- calculate section large device starts -->
-            <div class="border-[1px] border-black h-[440px] px-3 pt-16 rounded-xl hidden lg:flex">
-                <h1 class="text-xl font-bold font-inter">Area Calculator</h1>
+            <div class="flex flex-col gap-4">
+                <div class="border-[1px] border-black h-[440px] px-3 pt-16 rounded-xl hidden lg:flex flex-col">
+                    <h1 class="text-xl font-bold font-inter">Area Calculator</h1>
+                    <h1> area : <span id="area-value"> 0 </span> cm <sup>2</sup> </h1>
+                </div>
+                <div class="border-[1px] border-black h-[440px] px-3 pt-16 rounded-xl hidden lg:flex flex-col">
+                    <h1 class="text-xl font-bold font-inter">Area Calculator</h1>
+                    <h1> area : <span id="area-value-two"> 0 </span> cm <sup>2</sup> </h1>
+                </div>
             </div>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
